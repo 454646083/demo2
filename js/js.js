@@ -1,15 +1,3 @@
-//导航栏
-$('.move').click(function() {
-	$('.smnone').animate({
-		'right': -14 + 'px'
-	}, 500);
-
-})
-$('#show').click(function() {
-	$('.smnone').animate({
-		'right': -97 + 'px'
-	}, 500);
-})
 //固定栏
 $('.switch').click(function() {
 	$('.icons').animate({
@@ -128,15 +116,15 @@ $(function() {
 		$('.Content').stop().animate({
 			top: -numm * 100 + '%'
 		}, 800);
-		$('.nav .list li').eq(numm + 1).addClass('sizeColor').siblings().removeClass();
+		$('.nav .list li').eq(numm).addClass('sizeColor').siblings().removeClass();
 	});
 	$('.nav .list li').click(function(e) {
 		var index = $(this).index();
 		$(this).addClass('sizeColor').siblings().removeClass();
 		$('.Content').stop().animate({
-			top: (-index + 1) * 100 + '%'
+			top: (-index) * 100 + '%'
 		}, 800);
-		numm = (index - 1);
+		numm = index;
 	});
 })
 //第七页    
