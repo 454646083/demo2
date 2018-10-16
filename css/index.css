@@ -1,59 +1,77 @@
-*{
+* {
 	margin: 0px;
 	padding: 0px;
 	list-style: none;
-/*	text-align: center;	*/
 }
-body, html {
+
+body,
+html {
 	width: 100%;
 	height: 100%;
 }
-body{
-	overflow:hidden;
+
+body {
+	overflow: hidden;
 }
-header{
+
+header {
 	position: fixed;
 	top: 0;
 	width: 100%;
-    z-index: 99;
+	z-index: 99;
 }
-.threeleft,.threeright,.threeNone,.fourNone,.fiveNone,.fiveleft,.fiveright,.Eight .btimg,.Two .btimg,.Three .btimg{
+
+.threeleft,
+.threeright,
+.threeNone,
+.fourNone,
+.fiveNone,
+.fiveleft,
+.fiveright,
+.Eight .btimg,
+.Two .btimg,
+.Three .btimg {
 	display: none;
 }
 
-.active{
-	background:#204D74;
+.active {
+	background: #204D74;
 	color: white;
 }
 
-a{
+a {
 	color: #FFFFFF;
 }
 
-.sizeColor{
+.sizeColor {
 	color: #00DFB9;
 }
-.listOne .bgcccc{
+
+.listOne .bgcccc {
 	background: #00DFB9;
 }
-.Content{
+
+.Content {
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	left: 0;
 	top: 0;
-/*	z-index: 1;*/
+	/*	z-index: 1;*/
 }
 
+
 /*第一页	*/
-.listOne{
+
+.listOne {
 	position: absolute;
 	left: 50%;
 	bottom: 10%;
 	margin-left: -143px;
-	
+	z-index: 999999;
 }
-.listOne li{
+
+.listOne li {
 	width: 54px;
 	height: 3px;
 	background: #FFFFFF;
@@ -61,19 +79,87 @@ a{
 	margin-left: 20px;
 	cursor: pointer;
 }
-.listOne li:nth-of-type(1){
+
+.listOne li:nth-of-type(1) {
 	margin-left: 0px;
 }
 
 
+/*固定栏*/
 
+.dock {
+	width: 50px;
+	height: 300px;
+	position: fixed;
+	right: 0px;
+	margin-top: -150px;
+	top: 50%;
+	z-index: 9999;
+}
 
+.icons {
+	position: absolute;
+	display: inline-block;
+	width: 50px;
+	height: 250px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 10px 0px 0px 10px;
+}
 
+.icons li:nth-of-type(1) {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: url(../img/icons.png) no-repeat -63px -150px;
+	cursor: pointer;
+}
 
+.icons li:nth-of-type(2) {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: url(../img/icons.png) no-repeat -63px -20px;
+	cursor: pointer;
+}
 
+.icons li:nth-of-type(3) {
+	width: 50px;
+	height: 50px;
+	background: url(../img/icons.png) no-repeat -62px -108px;
+	cursor: pointer;
+}
 
+.icons li:nth-of-type(4) {
+	width: 50px;
+	height: 50px;
+	background: url(../img/icons.png) no-repeat -59px -66px;
+	cursor: pointer;
+}
 
+.icons li:nth-of-type(5) {
+	width: 50px;
+	height: 50px;
+	background: url(../img/icons.png) no-repeat -63px -190px;
+	cursor: pointer;
+}
 
+.switch {
+	position: absolute;
+	right: 13px;
+	bottom: 0px;
+	width: 26px;
+	height: 26px;
+	background: url(../img/icons.png) no-repeat 0px -640px;
+	cursor: pointer;
+}
 
-
-
+.off {
+	position: absolute;
+	display: none;
+	right: 13px;
+	bottom: 0px;
+	width: 26px;
+	height: 26px;
+	background: url(../img/icons.png) no-repeat -32px -640px;
+	cursor: pointer;
+}
